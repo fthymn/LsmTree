@@ -8,7 +8,7 @@ namespace LSMTree.DataStoreService
 {
     public class DataStoreService : IDataStoreService
     {
-        private readonly int maxMemTableSize = 5;
+        private readonly int maxMemTableSize = 30;
         private readonly string TOMBSTONE_VALUE = "tombstone";
 
         private readonly ICommitLogService _commitLogService;
